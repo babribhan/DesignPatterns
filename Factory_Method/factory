@@ -1,0 +1,10 @@
+#ifndef FACTORY_H_
+#define FACTORY_H_
+
+#include "vehicle"
+class Factory{
+public:
+static Vehicle* createInstance(int);
+static int destroyInstance(Vehicle*);
+};
+#endif
