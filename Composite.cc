@@ -47,7 +47,7 @@ class L1Support : public Employee {
                 void Add(Employee*) {}
                 void Remove(Employee*) {}
 };
-
+/* Composite object. */
 class Manager : public Employee {
         public:
                 Manager(const char* name,const char* profile,int salary) : Employee(name,profile,salary){};
@@ -102,6 +102,7 @@ int main(){
         delete t1;
         delete t2;
         delete l1;
-        return 0;
         trace_depth--;
+        return 0;
+        
 }
